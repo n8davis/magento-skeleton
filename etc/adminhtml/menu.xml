@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Starter_Example::wholesale"
+             title="Wholesale Products"
+             translate="title"
+             module="Starter_Example"
+             parent="Starter_Integrator::starter_menu"
+             sortOrder="30"
+             resource="Starter_Example::wholesale"
+        />
+        <add id="Starter_Example::wholesale_products"
+             title="View All"
+             translate="title"
+             module="Starter_Example"
+             parent="Starter_Example::wholesale"
+             sortOrder="40"
+             action="legacyproducts/products"
+             resource="Starter_Example::starter_menu"
+        />
+
+    </menu>
+</config>
+
